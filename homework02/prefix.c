@@ -109,19 +109,36 @@ void verify(int* sol, int* ans, int n)
 void prefix_sum(int* src, int* prefix, int n)
 {
     prefix[0] = src[0];
-    for(int i = 1; i < n; i++) {
+    for(int i = 1; i < n; i++) 
+    {
         prefix[i] = src[i] + prefix[i - 1];
     }
 }
 
+// Hills-Steele Algorithm Implementation
 void prefix_sum_p1(int* src, int* prefix, int n)
 {
+    for (offset = 1; offset < n; offset *= 2)
+    {
+        #pragma omp parallel for schedule (static)
+        for (int i = 0; i < n; i++)
+            {
+                if (i >= offset)
+                {
+                    out[i] = src[i] + src[i - offset];
+                }
+                else 
+                {
+                    out[i] = in[i];
+                }
+            }
+    }
 
 }
 
 void prefix_sum_p2(int* src, int* prefix, int n)
 {
-
+    
 }
 
 
