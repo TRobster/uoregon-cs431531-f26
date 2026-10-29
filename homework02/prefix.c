@@ -144,7 +144,7 @@ void prefix_sum_p1(int* src, int* prefix, int n)
 void prefix_sum_p2(int* src, int* prefix, int n)
 {
     int T = omp_get_max_threads();
-int* totals = malloc(T * sizeof(int));      // shared, one slot per thread
+    int* totals = malloc(T * sizeof(int)); // Each thread gets a slot 
 
 #pragma omp parallel
 {
@@ -154,7 +154,7 @@ int* totals = malloc(T * sizeof(int));      // shared, one slot per thread
     int start = tid * chunk;
     int end   = (start + chunk < n) ? start + chunk : n; // take min
 
-    // phase 1: serial scan of my chunk
+    // phase 1: serial scan of chunk
     if (start < n) {
         prefix[start] = src[start];
         for (int i = start + 1; i < end; i++)
@@ -167,7 +167,7 @@ int* totals = malloc(T * sizeof(int));      // shared, one slot per thread
 
     #pragma omp barrier // synchronization
 
-    // phase 2: one thread scans the T totals into offsets
+    // phase 2 one thread scans the T totals into offsets
     #pragma omp single
     {
         int run = 0;
