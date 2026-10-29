@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --account=cis431_531            ### your ‘charge’ account 
+#SBATCH --account=smearlab            ### your ‘charge’ account 
 #SBATCH --partition=compute             ### queue to submit to
 #SBATCH --job-name=prefix               ### job name
 #SBATCH --output=output/prefix_%A.out   ### file in which to store job stdout
@@ -8,7 +8,7 @@
 #SBATCH --mem=16000M                    ### memory limit per node (K|M|G|T)
 #SBATCH --nodes=1                       ### number of nodes to use
 #SBATCH --ntasks-per-node=1             ### number of MPI tasks per node
-#SBATCH --cpus-per-task=128              ### number of CPUs for each task
+#SBATCH --cpus-per-task=64            ### number of CPUs for each task
 
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 export OMP_PLACES="cores"

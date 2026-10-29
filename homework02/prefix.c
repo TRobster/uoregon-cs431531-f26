@@ -118,20 +118,25 @@ void prefix_sum(int* src, int* prefix, int n)
 // Hills-Steele Algorithm Implementation
 void prefix_sum_p1(int* src, int* prefix, int n)
 {
-    for (offset = 1; offset < n; offset *= 2)
+    int *in = src;
+    int *out = prefix;
+    for (int offset = 1; offset < n; offset *= 2)
     {
         #pragma omp parallel for schedule (static)
         for (int i = 0; i < n; i++)
             {
                 if (i >= offset)
                 {
-                    out[i] = src[i] + src[i - offset];
+                    out[i] = in[i] + in[i - offset];
                 }
                 else 
                 {
                     out[i] = in[i];
                 }
             }
+        int *tmp = in; 
+        in = out;
+        out = tmp;
     }
 
 }
@@ -147,7 +152,7 @@ int* totals = malloc(T * sizeof(int));      // shared, one slot per thread
     int nt  = omp_get_num_threads();
     int chunk = (n + nt - 1) / nt;
     int start = tid * chunk;
-    int end   = (start + chunk, n) ? start + chunk : n; // take min
+    int end   = (start + chunk < n) ? start + chunk : n; // take min
 
     // phase 1: serial scan of my chunk
     if (start < n) {
@@ -155,7 +160,7 @@ int* totals = malloc(T * sizeof(int));      // shared, one slot per thread
         for (int i = start + 1; i < end; i++)
         {
             
-            prefix[i] = prefix[i-1] + src[i]
+            prefix[i] = prefix[i-1] + src[i];
         };
         totals[tid] = prefix[end-1];
     } else totals[tid] = 0;
