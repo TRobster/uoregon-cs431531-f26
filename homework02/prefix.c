@@ -202,7 +202,18 @@ void prefix_sum_p22(int* src, int* prefix, int n)
             prefix[i + 2*d - 1] += prefix[i + d - 1];
         }
     }
-
+    
+    #pragma omp barrier 
+    for (d = n/2; d >= 1; d /= 2)
+    {
+        #pragma omp parallel for schedule (static)
+        for (i = 0; i < n; i += 2*d)
+        {
+            int t = prefix[i + d - 1];
+            prefix[i + d - 1] = prefix[i + 2*d - 1];
+            prefix[i + 2*d - 1] += t;
+        }
+    }
 }
 
 
