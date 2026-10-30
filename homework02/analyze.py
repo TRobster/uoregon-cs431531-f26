@@ -6,6 +6,9 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
+### Similar to homework 1, I decided to use Claude Code again to generate the same 
+### type of .py script for data analysis/graph generation. 
+
 # usage: python analyze.py output/prefix_<jobid>.out
 # prints a table of the mean of every run per thread count, writes results.csv, scaling.png and scaling.pdf
 
