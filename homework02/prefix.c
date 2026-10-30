@@ -7,6 +7,13 @@
 #include <inttypes.h>
 #include "common.h"
 
+/*
+Author: Trevor Robbins
+Class: CS431
+Professor: Choi
+Date: 10/30/26
+*/
+
 
 void usage(int argc, char** argv);
 void verify(int* sol, int* ans, int n);
@@ -194,6 +201,8 @@ void prefix_sum_p2(int* src, int* prefix, int n)
 {
     memcpy(prefix,src, n * sizeof(int));
 
+    // up-sweep: build partial sums as a tree
+    // (the if clause runs levels with few iterations serially, to skip the fork/join cost)
     for (int d = 1; d < n; d *=2)
     {
         #pragma omp parallel for schedule (static)
@@ -202,8 +211,11 @@ void prefix_sum_p2(int* src, int* prefix, int n)
             prefix[i + 2*d - 1] += prefix[i + d - 1];
         }
     }
-    
-    #pragma omp barrier 
+
+    // clear the root so the down-sweep produces an exclusive scan
+    prefix[n - 1] = 0;
+
+    // down-sweep: push the partial sums back down the tree
     for (int d = n/2; d >= 1; d /= 2)
     {
         #pragma omp parallel for schedule (static)
@@ -213,6 +225,13 @@ void prefix_sum_p2(int* src, int* prefix, int n)
             prefix[i + d - 1] = prefix[i + 2*d - 1];
             prefix[i + 2*d - 1] += t;
         }
+    }
+
+    // exclusive -> inclusive: add each element's own value (src is untouched)
+    #pragma omp parallel for schedule (static)
+    for (int i = 0; i < n; i++)
+    {
+        prefix[i] += src[i];
     }
 }
 
