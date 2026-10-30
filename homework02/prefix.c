@@ -204,10 +204,10 @@ void prefix_sum_p2(int* src, int* prefix, int n)
     }
     
     #pragma omp barrier 
-    for (d = n/2; d >= 1; d /= 2)
+    for (int d = n/2; d >= 1; d /= 2)
     {
         #pragma omp parallel for schedule (static)
-        for (i = 0; i < n; i += 2*d)
+        for (int i = 0; i < n; i += 2*d)
         {
             int t = prefix[i + d - 1];
             prefix[i + d - 1] = prefix[i + 2*d - 1];
