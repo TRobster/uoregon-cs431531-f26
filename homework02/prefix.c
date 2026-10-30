@@ -198,10 +198,12 @@ free(totals);
 }
 */
 
+
+// Blelloch Scan
 void prefix_sum_p2(int* src, int* prefix, int n)
 {
 
-
+    memcpy(prefix, src, n * sizeof(int));
     // up-sweep: build partial sums as a tree
     for (int d = 1; d < n; d *=2)
     {
