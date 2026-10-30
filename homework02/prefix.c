@@ -199,7 +199,7 @@ free(totals);
 
 void prefix_sum_p2(int* src, int* prefix, int n)
 {
-    memcpy(prefix,src, n * sizeof(int));
+
 
     // up-sweep: build partial sums as a tree
     // (the if clause runs levels with few iterations serially, to skip the fork/join cost)
