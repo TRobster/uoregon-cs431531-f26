@@ -190,7 +190,7 @@ free(totals);
 }
 */
 
-void prefix_sum_p22(int* src, int* prefix, int n)
+void prefix_sum_p2(int* src, int* prefix, int n)
 {
     memcpy(prefix,src, n * sizeof(int));
 
