@@ -1,0 +1,121 @@
+\documentclass[11pt,letterpaper]{article}
+
+% ---------- Packages (all ship with Overleaf's default TeX Live) ----------
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{pgfplotstable}
+\usepackage{float}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{setspace}
+\usepackage[colorlinks=true,allcolors=black]{hyperref}
+
+\pgfplotsset{compat=1.16}
+
+% ---------- Dependencies: edit these two lines if your filenames differ ----------
+\newcommand{\datafile}{results.csv}
+\newcommand{\figfile}{scaling.png}
+
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+
+\begin{document}
+
+% ---------- Header block ----------
+\noindent
+Author: Trevor Robbins\\
+Class: CS431\\
+Professor: Choi\\
+Date: 10/30/26
+
+\begin{center}
+  {\large\bfseries Analysis of Prefix-Sum Serial vs.\ Parallel Algorithms\\
+  (Hillis--Steele and Blelloch Scan)}
+\end{center}
+
+\onehalfspacing
+
+% ---------- Introduction ----------
+In this homework assignment, I demonstrate the performance differences between
+three implementations of the prefix sum. The prefix sum is an operator that,
+given an array of size $n$, iterates up to $n$ while calculating a running sum
+across the elements. For this case study, I use a serial version as the control
+and compare it against the Hillis--Steele and Blelloch algorithms, with the
+number of CPU threads as an adjustable parameter set to 2, 4, 8, 16, 32, and 64.
+
+\section*{Serial vs.\ Hillis--Steele vs.\ Blelloch Scan}
+
+The serial implementation is practically identical to the definition above: the
+iterator runs from $1$ to $n$, carrying the running total forward until the
+element at $n$ has been summed. This serial algorithm has bottlenecks that
+parallelization can capitalize on, which is where the Hillis--Steele parallel
+algorithm comes in. Hillis--Steele iterates over the array while doubling the
+stride (offset) at each step, so each element's partial sum propagates
+logarithmically across the array. In turn, this algorithm performs an extra
+$\log_2(n)$ factor of work per element. With $n$ processors this amortizes to
+$O(\log n)$ time; however, because we only use up to 64 CPU threads, the cost
+simplifies to $O(n \log n)$ total work.
+
+Finally, there is the Blelloch scan. This algorithm builds the running sum with
+an up-sweep (a tree of partial sums) followed by a down-sweep (propagating those
+sums back down the tree). The tree has a depth of $\log_2(n)$, and the total
+work is $2(n-1)$ additions, giving $O(n)$ complexity.
+
+% ---------- Analysis ----------
+\section*{Analysis}
+
+Table~\ref{tab:results} lists the mean runtimes over 20 runs and the resulting
+speedups for each thread count, and Figure~\ref{fig:results} plots them.
+
+\begin{table}[H]
+  \centering
+  \caption{Mean runtime (seconds) and speedup relative to the serial baseline,
+  averaged over 20 runs per thread count.}
+  \label{tab:results}
+  \resizebox{\textwidth}{!}{%
+  \pgfplotstabletypeset[
+    col sep=comma,
+    every head row/.style={before row=\toprule, after row=\midrule},
+    every last row/.style={after row=\bottomrule},
+    columns/threads/.style={column name={Threads}, int detect, column type=c},
+    columns/runs/.style={column name={Runs}, int detect, column type=c},
+    columns/serial_s/.style={column name={Serial (s)}, fixed, fixed zerofill, precision=4, column type=c},
+    columns/hillis_steele_s/.style={column name={Hillis--Steele (s)}, fixed, fixed zerofill, precision=4, column type=c},
+    columns/blelloch_s/.style={column name={Blelloch (s)}, fixed, fixed zerofill, precision=4, column type=c},
+    columns/hillis_steele_speedup/.style={column name={Hillis--Steele Speedup}, fixed, fixed zerofill, precision=3, column type=c},
+    columns/blelloch_speedup/.style={column name={Blelloch Speedup}, fixed, fixed zerofill, precision=3, column type=c},
+  ]{\datafile}%
+  }
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{\figfile}
+  \caption{Left: mean prefix-sum runtime versus thread count (log scale).
+  Right: speedup relative to the serial implementation (log scale; 1 = serial).}
+  \label{fig:results}
+\end{figure}
+
+Reading the results above, the serial implementation stays controlled and fixed
+against our experimental groups. First, we can see that Hillis--Steele
+\emph{decreases} performance relative to serial when the thread count is limited
+to CPU capacities. This is expected: Hillis--Steele is known as a
+``work-inefficient'' algorithm, which makes up for its extra work by spreading
+it across a hypothetically large number of SIMD-style processing elements. In
+this case, since we cap at only 64 threads, the extra work is simply multiplied
+across each core, giving $O(n \log n)$ total work and a performance of only
+$0.551\times$ the serial baseline at 64 threads.
+
+Analyzing the Blelloch scan, the results stand out as quite interesting. Being
+referred to as ``work efficient,'' the Blelloch scan performs $2(n-1)$ total
+additions, and, as mentioned earlier, the tree it builds has a depth of
+$\log_2(n)$. In our graph, performance increases as the thread count grows and
+levels off, reaching up to a $1.75\times$ speedup. The apparent logarithmic
+trend might be a coincidence of simply scaling the thread count by powers of two,
+but I found it to be an interesting insight into the results as the depth of the work tree is $\log_2(n)$, potentially highlighting a bottleneck for parallelization in this algorithm. Regardless, I
+noticed that these results appear bottlenecked by memory bandwidth, and further
+investigation into this algorithm would involve a breakdown of how memory
+bandwidth affects timing.
+
+\end{document}
