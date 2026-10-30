@@ -141,6 +141,7 @@ void prefix_sum_p1(int* src, int* prefix, int n)
 
 }
 
+/*
 void prefix_sum_p2(int* src, int* prefix, int n)
 {
     int T = omp_get_max_threads();
@@ -187,6 +188,21 @@ void prefix_sum_p2(int* src, int* prefix, int n)
 free(totals);
 
 }
+*/
 
+void prefix_sum_p22(int* src, int* prefix, int n)
+{
+    memcpy(prefix,src, n * sizeof(int));
+
+    for (int d = 1; d < n; d *=2)
+    {
+        #pragma omp parallel for schedule (static)
+        for (int i = 0; i < n; i += 2*d)
+        {
+            prefix[i + 2*d - 1] += prefix[i + d - 1];
+        }
+    }
+
+}
 
 
