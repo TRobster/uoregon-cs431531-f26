@@ -141,6 +141,7 @@ void prefix_sum_p1(int* src, int* prefix, int n)
                     out[i] = in[i];
                 }
             }
+        // ping pong buffer 
         int *tmp = in; 
         in = out;
         out = tmp;
@@ -202,7 +203,6 @@ void prefix_sum_p2(int* src, int* prefix, int n)
 
 
     // up-sweep: build partial sums as a tree
-    // (the if clause runs levels with few iterations serially, to skip the fork/join cost)
     for (int d = 1; d < n; d *=2)
     {
         #pragma omp parallel for schedule (static)
