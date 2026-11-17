@@ -509,7 +509,25 @@ void spmv_coo(unsigned int* row_ind, unsigned int* col_ind, double* vals,
               int m, int n, int nnz, double* vector_x, double *res, 
               omp_lock_t* writelock)
 {
-    
+    // res is malloc'd uninitialized and this is called repeatedly, so zero it
+    #pragma omp parallel
+    {
+        #pragma omp for
+        for (int i = 0; i < m; i++) {
+            res[i] = 0.0;
+        }   // implicit barrier: all zeroing finishes before accumulation
+
+        #pragma omp for
+        for (int i = 0; i < nnz; i++) {
+            unsigned int r = row_ind[i];
+            // compute outside the lock to keep the critical section short
+            double contrib = vals[i] * vector_x[col_ind[i]];
+
+            omp_set_lock(&writelock[r]);
+            res[r] += contrib;
+            omp_unset_lock(&writelock[r]);
+        }
+    }
 }
 
 
