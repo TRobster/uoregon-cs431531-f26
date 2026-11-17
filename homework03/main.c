@@ -349,6 +349,120 @@ void convert_coo_to_csr(int* row_ind, int* col_ind, double* val,
                         double** csr_vals)
 
 {
+    // NOTE: the Matrix Market reader leaves row_ind/col_ind 1-based.
+    // The CSR arrays produced here are 0-based.
+    unsigned int* row_ptr = (unsigned int*) calloc(m + 1, sizeof(unsigned int));
+    assert(row_ptr);
+    unsigned int* col_idx = (unsigned int*) malloc(sizeof(unsigned int) * nnz);
+    assert(col_idx);
+    double* vals = (double*) malloc(sizeof(double) * nnz);
+    assert(vals);
+
+    int max_threads = omp_get_max_threads();
+
+    // Create histogram for each row r, distribute the amount of total NNZ across
+    // rows to easily convert into CSR for reduction in count[t *m + r]
+    unsigned int* counts = (unsigned int*) calloc((size_t) max_threads * m,
+                                                  sizeof(unsigned int));
+    assert(counts);
+    // Per-thread partial sums for the parallel prefix sum over rows
+    unsigned int* partial = (unsigned int*) calloc(max_threads + 1,
+                                                   sizeof(unsigned int));
+    assert(partial);
+
+    #pragma omp parallel
+    {
+        int tid = omp_get_thread_num();
+        int nt  = omp_get_num_threads();
+
+        // Static partition of the non-zeros. The same chunk is used in the
+        // histogram and the scatter phases so the offsets line up.
+        int nz_chunk = (nnz + nt - 1) / nt;
+        int nz_start = tid * nz_chunk;
+        int nz_end   = nz_start + nz_chunk;
+        if(nz_end > nnz) nz_end = nnz;
+        unsigned int* my_counts = counts + (size_t) tid * m;
+
+        // Parallel histogram (each thread counts its own chunk)
+        for(int i = nz_start; i < nz_end; i++) {
+            my_counts[row_ind[i] - 1]++;
+        }
+
+        // synchronization
+        #pragma omp barrier
+
+        // Reduce per-thread histograms into row_ptr[r+1]
+        #pragma omp for
+        for(int r = 0; r < m; r++) {
+            unsigned int sum = 0;
+            for(int t = 0; t < nt; t++) {
+                sum += counts[(size_t) t * m + r];
+            }
+            row_ptr[r + 1] = sum;
+        }
+        // implicit barrier
+
+        // Parallel prefix sum over row_ptr[1..m]
+        // Each thread scans its own block of rows, then a single thread
+        // scans the block totals, then each thread adds its block offset.
+        int r_chunk = (m + nt - 1) / nt;
+        int r_start = tid * r_chunk;
+        int r_end   = r_start + r_chunk;
+        if(r_end > m) r_end = m;
+
+        unsigned int running = 0;
+        for(int r = r_start; r < r_end; r++) {
+            running += row_ptr[r + 1];
+            row_ptr[r + 1] = running;
+        }
+        partial[tid + 1] = running;
+        #pragma omp barrier
+
+        #pragma omp single
+        {
+            for(int t = 0; t < nt; t++) {
+                partial[t + 1] += partial[t];
+            }
+        }
+        // implicit barrier
+
+        unsigned int offset = partial[tid];
+        for(int r = r_start; r < r_end; r++) {
+            row_ptr[r + 1] += offset;
+        }
+        #pragma omp barrier
+
+        // Turn per-thread counts into per-thread write offsets 
+        // For each row, thread t starts writing at
+        // row_ptr[r] + (number of entries for row r in chunks 0..t-1).
+        #pragma omp for
+        for(int r = 0; r < m; r++) {
+            unsigned int pos = row_ptr[r];
+            for(int t = 0; t < nt; t++) {
+                unsigned int c = counts[(size_t) t * m + r];
+                counts[(size_t) t * m + r] = pos;
+                pos += c;
+            }
+        }
+        // implicit barrier
+
+        // Parallel scatter into the CSR arrays
+        for(int i = nz_start; i < nz_end; i++) {
+            int r = row_ind[i] - 1;
+            unsigned int pos = my_counts[r]++;
+            col_idx[pos] = (unsigned int) (col_ind[i] - 1);
+            vals[pos] = val[i];
+        }
+    }
+
+    assert(row_ptr[m] == (unsigned int) nnz);
+
+    free(counts);
+    free(partial);
+
+    *csr_row_ptr = row_ptr;
+    *csr_col_ind = col_idx;
+    *csr_vals = vals;
 }
 
 /* Reads in a vector from file.
@@ -395,6 +509,7 @@ void spmv_coo(unsigned int* row_ind, unsigned int* col_ind, double* vals,
               int m, int n, int nnz, double* vector_x, double *res, 
               omp_lock_t* writelock)
 {
+    
 }
 
 
