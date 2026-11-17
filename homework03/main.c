@@ -538,6 +538,20 @@ void spmv(unsigned int* csr_row_ptr, unsigned int* csr_col_ind,
           double* csr_vals, int m, int n, int nnz, 
           double* vector_x, double *res)
 {
+        for (int i = 0; i < m; i++) 
+        {
+        res[i] = 0.0;
+        } 
+        for (int i = 0; i < nnz; i++) 
+        {
+            unsigned int r = row_ind[i];
+            // compute outside the lock to keep the critical section short
+            double contrib = vals[i] * vector_x[col_ind[i]];
+            res[r] += contrib;
+        }
+
+
+
 }
 
 
