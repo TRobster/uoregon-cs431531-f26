@@ -580,6 +580,15 @@ void spmv_ser(unsigned int* csr_row_ptr, unsigned int* csr_col_ind,
               double* csr_vals, int m, int n, int nnz, 
               double* vector_x, double *res)
 {
+    for (int i = 0; i < m; i++)
+    {
+        double sum = 0.0;
+        for (unsigned int j = csr_row_ptr[i]; j < csr_row_ptr[i + 1]; j++)
+        {
+            sum += csr_vals[j] * vector_x[csr_col_ind[j]];
+        }
+        res[i] = sum;
+    }
 }
 
 
