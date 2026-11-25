@@ -9,11 +9,25 @@
 
 template <class T>
 __global__ void
-spmv_kernel_ell(unsigned int* col_ind, T* vals, int m, int n, int nnz, 
+spmv_kernel_ell(unsigned int* col_ind, T* vals, int m, int n, int nnz,
                 double* x, double* b)
 {
-
-    // COMPLETE THIS FUNCTION
+    // One thread per row. The ELL arrays are column-major (m x n, entry
+    // (row, k) at k * m + row), so neighbouring threads read neighbouring
+    // addresses and the loads coalesce. n is the padded row width, i.e. the
+    // max number of non-zeros in any row. Padding entries have value 0.
+    for (int row = blockIdx.x * blockDim.x + threadIdx.x; row < m;
+         row += gridDim.x * blockDim.x) {
+        double sum = 0.0;
+        for (int k = 0; k < n; k++) {
+            size_t idx = (size_t) k * m + row;
+            T v = vals[idx];
+            if (v != 0) {   // skip padding (saves the x[] load)
+                sum += v * x[col_ind[idx]];
+            }
+        }
+        b[row] = sum;
+    }
 }
 
 
@@ -29,9 +43,10 @@ void spmv_gpu_ell(unsigned int* col_ind, double* vals, int m, int n, int nnz,
     float elapsedTime;
 
     // GPU execution parameters
-    unsigned int blocks = m; 
-    unsigned int threads = 64; 
-    unsigned int shared = threads * sizeof(double);
+    // 1 thread per row (the ELL kernel needs no shared memory)
+    unsigned int threads = 256;
+    unsigned int blocks = (m + threads - 1) / threads;
+    unsigned int shared = 0;
 
     dim3 dimGrid(blocks, 1, 1);
     dim3 dimBlock(threads, 1, 1);

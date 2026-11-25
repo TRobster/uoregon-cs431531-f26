@@ -600,7 +600,42 @@ void convert_csr_to_ell(unsigned int* csr_row_ptr, unsigned int* csr_col_ind,
                         unsigned int** ell_col_ind, double** ell_vals, 
                         int* n_new)
 {
-    // COMPLETE THIS FUNCTION
+    // ELL width = the longest row
+    int width = 0;
+    #pragma omp parallel for reduction(max:width)
+    for(int r = 0; r < m; r++) {
+        int len = (int) (csr_row_ptr[r + 1] - csr_row_ptr[r]);
+        if(len > width) width = len;
+    }
+
+    // Column-major m x width arrays: entry (r, k) lives at k * m + r, so that
+    // on the GPU consecutive threads (rows) read consecutive addresses.
+    size_t size = (size_t) m * width;
+    unsigned int* col_ = (unsigned int*) malloc(sizeof(unsigned int) * size);
+    assert(col_);
+    double* vals_ = (double*) malloc(sizeof(double) * size);
+    assert(vals_);
+
+    #pragma omp parallel for
+    for(int r = 0; r < m; r++) {
+        unsigned int start = csr_row_ptr[r];
+        int len = (int) (csr_row_ptr[r + 1] - start);
+        for(int k = 0; k < width; k++) {
+            size_t idx = (size_t) k * m + r;
+            if(k < len) {
+                col_[idx]  = csr_col_ind[start + k];
+                vals_[idx] = csr_vals[start + k];
+            } else {
+                // padding: a valid column index with value 0 contributes nothing
+                col_[idx]  = 0;
+                vals_[idx] = 0.0;
+            }
+        }
+    }
+
+    *ell_col_ind = col_;
+    *ell_vals = vals_;
+    *n_new = width;
 }
 
 
