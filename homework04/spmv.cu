@@ -163,7 +163,7 @@ __global__ void
 spmv_kernel(unsigned int* row_ptr, unsigned int* col_ind, T* vals, 
             int m, int n, int nnz, double* x, double* b)
 {
-    // CSR vector kernel (paper Section 3.3): one warp (32 threads) per row.
+    //  one warp (32 threads) per row.
     // The warp's lanes stride through the row together, so they read col_ind
     // and vals contiguously, then add their partial sums with an intra-warp
     // reduction. blockDim.x must be a multiple of 32.
@@ -182,9 +182,8 @@ spmv_kernel(unsigned int* row_ptr, unsigned int* col_ind, T* vals,
             sum += vals[j] * __ldg(&x[col_ind[j]]);   // x via read-only cache
         }
 
-        // The paper reduces in shared memory without barriers, relying on a
-        // warp running in lockstep. Volta and later GPUs (A100) don't
-        // guarantee that, so the same tree reduction is done in registers.
+        // shifted to register tree reduction rather than shared memory. I used this in joseph's codebase
+        // for sbp-sat cuda kernel
         for (int offset = 16; offset > 0; offset >>= 1) {
             sum += __shfl_down_sync(0xffffffff, sum, offset);
         }
