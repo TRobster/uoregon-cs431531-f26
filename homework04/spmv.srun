@@ -10,8 +10,11 @@
 #SBATCH --gres=gpu:1          ### General REServation of gpu:number of gpus
 #SBATCH --cpus-per-task=28     ### Number of threads per task (OMP threads)
 
-module --ignore_cache load "cuda/10.2"
-module --ignore_cache load "gcc/7.3"
+# cuda/10.2 and gcc/7.3 (from the README) no longer exist on Talapas.
+# The Makefile builds with the system g++ 8.5.0 and links CUDA 11.2's runtime,
+# which has no module, so point the loader at its libraries directly.
+module --ignore_cache load "gcc/8.5.0"
+export LD_LIBRARY_PATH=/packages/cuda/11.2.0/lib64${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
 
 export OMP_PROC_BIND=true
 export OMP_NUM_THREADS=28
