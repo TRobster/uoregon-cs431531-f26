@@ -23,7 +23,7 @@ spmv_kernel_ell(unsigned int* col_ind, T* vals, int m, int n, int nnz,
             size_t idx = (size_t) k * m + row;
             T v = vals[idx];
             if (v != 0) {   // skip padding (saves the extra memory load from x)
-                sum += v * x[col_ind[idx]];
+                sum += v * __ldg(&x[col_ind[idx]]);   // x via read-only cache
             }
         }
         b[row] = sum;
@@ -163,39 +163,35 @@ __global__ void
 spmv_kernel(unsigned int* row_ptr, unsigned int* col_ind, T* vals, 
             int m, int n, int nnz, double* x, double* b)
 {
-    // One block per row ("CSR-vector"): the block's threads split the row's
-    // non-zeros between them, then add their partial sums together in shared
-    // memory. The tree reduction assumes blockDim.x is a power of two.
-    extern __shared__ double partial[];
-    unsigned int tid = threadIdx.x;
+    // CSR vector kernel (paper Section 3.3): one warp (32 threads) per row.
+    // The warp's lanes stride through the row together, so they read col_ind
+    // and vals contiguously, then add their partial sums with an intra-warp
+    // reduction. blockDim.x must be a multiple of 32.
+    int lane      = threadIdx.x % 32;
+    int warp_id   = (blockIdx.x * blockDim.x + threadIdx.x) / 32;
+    int num_warps = (gridDim.x * blockDim.x) / 32;
 
     // grid-stride over rows, so a grid smaller than m still covers every row.
-    // The loop bound depends only on blockIdx, so the whole block takes the
-    // same path and the __syncthreads() calls are safe.
-
-    // could come back to later and do by register implementation, shuffle-down ? possibly
-    for (int row = blockIdx.x; row < m; row += gridDim.x) {
+    // row depends only on the warp, so all 32 lanes reach the shuffles together.
+    for (int row = warp_id; row < m; row += num_warps) {
         unsigned int start = row_ptr[row];
         unsigned int end   = row_ptr[row + 1];
 
         double sum = 0.0;
-        for (unsigned int j = start + tid; j < end; j += blockDim.x) {
-            sum += vals[j] * x[col_ind[j]];
-        }
-        partial[tid] = sum;
-        __syncthreads();
-
-        for (unsigned int s = blockDim.x / 2; s > 0; s >>= 1) {
-            if (tid < s) {
-                partial[tid] += partial[tid + s];
-            }
-            __syncthreads();
+        for (unsigned int j = start + lane; j < end; j += 32) {
+            sum += vals[j] * __ldg(&x[col_ind[j]]);   // x via read-only cache
         }
 
-        if (tid == 0) {
-            b[row] = partial[0];
+        // The paper reduces in shared memory without barriers, relying on a
+        // warp running in lockstep. Volta and later GPUs (A100) don't
+        // guarantee that, so the same tree reduction is done in registers.
+        for (int offset = 16; offset > 0; offset >>= 1) {
+            sum += __shfl_down_sync(0xffffffff, sum, offset);
         }
-        __syncthreads();   // partial[] is reused for the next row
+
+        if (lane == 0) {
+            b[row] = sum;
+        }
     }
 }
 
@@ -211,11 +207,11 @@ void spmv_gpu(unsigned int* row_ptr, unsigned int* col_ind, double* vals,
     float elapsedTime;
 
     // GPU execution parameters
-    // 1 thread block per row
-    // 64 threads working on the non-zeros on the same row
-    unsigned int blocks = m; 
-    unsigned int threads = 64; 
-    unsigned int shared = threads * sizeof(double);
+    // 1 warp (32 threads) per row, 8 warps per block
+    // the reduction uses warp shuffles, so no shared memory is needed
+    unsigned int threads = 256;
+    unsigned int blocks = (m * 32 + threads - 1) / threads;
+    unsigned int shared = 0;
 
     dim3 dimGrid(blocks, 1, 1);
     dim3 dimBlock(threads, 1, 1);
