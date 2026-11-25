@@ -91,7 +91,12 @@ void allocate_csr_gpu(unsigned int* row_ptr, unsigned int* col_ind,
                       double** dev_vals, double** dev_x, double** dev_b)
 {
     // copy CSR data to GPU and allocate memory for output
-    // COMPLETE THIS FUNCTION
+    CopyData<unsigned int>(row_ptr, m + 1, sizeof(unsigned int), dev_row_ptr);
+    CopyData<unsigned int>(col_ind, nnz, sizeof(unsigned int), dev_col_ind);
+    CopyData<double>(vals, nnz, sizeof(double), dev_vals);
+    CopyData<double>(x, n, sizeof(double), dev_x);
+
+    checkCudaErrors(cudaMalloc((void**) dev_b, sizeof(double) * m));
 }
 
 void get_result_gpu(double* dev_b, double* b, int m)
