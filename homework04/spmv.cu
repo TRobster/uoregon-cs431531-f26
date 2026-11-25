@@ -72,7 +72,17 @@ void allocate_ell_gpu(unsigned int* col_ind, double* vals, int m, int n,
                       double** dev_vals, double** dev_x, double** dev_b)
 {
     // copy ELL data to GPU and allocate memory for output
-    // COMPLETE THIS FUNCTION
+    // n here is the padded ELL width (n_new), so each array holds m * n entries.
+    unsigned int ell_size = (unsigned int) ((size_t) m * n);
+    CopyData<unsigned int>(col_ind, ell_size, sizeof(unsigned int), dev_col_ind);
+    CopyData<double>(vals, ell_size, sizeof(double), dev_vals);
+
+    // x has one entry per matrix column. The original column count isn't
+    // passed in (n is the ELL width), so this assumes a square matrix (m == n),
+    // which holds for cant and any symmetric matrix.
+    CopyData<double>(x, m, sizeof(double), dev_x);
+
+    checkCudaErrors(cudaMalloc((void**) dev_b, sizeof(double) * m));
 }
 
 void allocate_csr_gpu(unsigned int* row_ptr, unsigned int* col_ind, 
