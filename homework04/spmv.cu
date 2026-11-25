@@ -15,14 +15,14 @@ spmv_kernel_ell(unsigned int* col_ind, T* vals, int m, int n, int nnz,
     // One thread per row. The ELL arrays are column-major (m x n, entry
     // (row, k) at k * m + row), so neighbouring threads read neighbouring
     // addresses and the loads coalesce. n is the padded row width, i.e. the
-    // max number of non-zeros in any row. Padding entries have value 0.
+    // max number of NNZ in any row. Padding entries have value 0
     for (int row = blockIdx.x * blockDim.x + threadIdx.x; row < m;
          row += gridDim.x * blockDim.x) {
         double sum = 0.0;
         for (int k = 0; k < n; k++) {
             size_t idx = (size_t) k * m + row;
             T v = vals[idx];
-            if (v != 0) {   // skip padding (saves the x[] load)
+            if (v != 0) {   // skip padding (saves the extra memory load from x)
                 sum += v * x[col_ind[idx]];
             }
         }
@@ -163,7 +163,40 @@ __global__ void
 spmv_kernel(unsigned int* row_ptr, unsigned int* col_ind, T* vals, 
             int m, int n, int nnz, double* x, double* b)
 {
-    // COMPLETE THIS FUNCTION
+    // One block per row ("CSR-vector"): the block's threads split the row's
+    // non-zeros between them, then add their partial sums together in shared
+    // memory. The tree reduction assumes blockDim.x is a power of two.
+    extern __shared__ double partial[];
+    unsigned int tid = threadIdx.x;
+
+    // grid-stride over rows, so a grid smaller than m still covers every row.
+    // The loop bound depends only on blockIdx, so the whole block takes the
+    // same path and the __syncthreads() calls are safe.
+
+    // could come back to later and do by register implementation, shuffle-down ? possibly
+    for (int row = blockIdx.x; row < m; row += gridDim.x) {
+        unsigned int start = row_ptr[row];
+        unsigned int end   = row_ptr[row + 1];
+
+        double sum = 0.0;
+        for (unsigned int j = start + tid; j < end; j += blockDim.x) {
+            sum += vals[j] * x[col_ind[j]];
+        }
+        partial[tid] = sum;
+        __syncthreads();
+
+        for (unsigned int s = blockDim.x / 2; s > 0; s >>= 1) {
+            if (tid < s) {
+                partial[tid] += partial[tid + s];
+            }
+            __syncthreads();
+        }
+
+        if (tid == 0) {
+            b[row] = partial[0];
+        }
+        __syncthreads();   // partial[] is reused for the next row
+    }
 }
 
 
