@@ -519,9 +519,10 @@ void spmv_coo(unsigned int* row_ind, unsigned int* col_ind, double* vals,
 
         #pragma omp for
         for (int i = 0; i < nnz; i++) {
-            unsigned int r = row_ind[i];
+            // COO indices from mm_read_mtx_crd are 1-based
+            unsigned int r = row_ind[i] - 1;
             // compute outside the lock to keep the critical section short
-            double contrib = vals[i] * vector_x[col_ind[i]];
+            double contrib = vals[i] * vector_x[col_ind[i] - 1];
 
             omp_set_lock(&writelock[r]);
             res[r] += contrib;
@@ -565,10 +566,9 @@ void spmv_coo_ser(unsigned int* row_ind, unsigned int* col_ind, double* vals,
     } 
     for (int i = 0; i < nnz; i++) 
     {
-        unsigned int r = row_ind[i];
-        // compute outside the lock to keep the critical section short
-        double contrib = vals[i] * vector_x[col_ind[i]];
-        res[r] += contrib;
+        // COO indices from mm_read_mtx_crd are 1-based
+        unsigned int r = row_ind[i] - 1;
+        res[r] += vals[i] * vector_x[col_ind[i] - 1];
     }
 }
 

@@ -22,8 +22,10 @@ for t in 2 4 8 16 32 64; do
     for run in $(seq 20); do
         echo "threads=$t run=$run"
         ans=output/myans_t${t}_r${run}.mtx
-        ./spmv cant/cant.mtx cant/b.mtx "$ans"
-        if diff -q "$ans" cant/ans.mtx > /dev/null; then
+        rm -f "$ans"
+        if ! ./spmv cant/cant.mtx cant/b.mtx "$ans"; then
+            echo "check: CRASHED (exit $?)"
+        elif diff -q "$ans" cant/ans.mtx > /dev/null; then
             echo "check: MATCH"
         else
             echo "check: DIFFERS from cant/ans.mtx"

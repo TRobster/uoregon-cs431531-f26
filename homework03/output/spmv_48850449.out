@@ -1,0 +1,4561 @@
+make: Nothing to be done for 'all'.
+threads=2 run=1
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r1.mtx ... file saved
+Module		Time
+Load		0.724430
+Convert		0.039997
+Lock Init	0.000342
+COO SpMV	6.455964
+CSR SpMV	0.800977
+COO SpMV Serial	1.472896
+CSR SpMV Serial	1.579125
+Store		0.026047
+check: MATCH
+threads=2 run=2
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r2.mtx ... file saved
+Module		Time
+Load		0.726040
+Convert		0.064336
+Lock Init	0.000337
+COO SpMV	5.957217
+CSR SpMV	0.800429
+COO SpMV Serial	1.457156
+CSR SpMV Serial	1.579802
+Store		0.024869
+check: MATCH
+threads=2 run=3
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r3.mtx ... file saved
+Module		Time
+Load		0.723140
+Convert		0.040895
+Lock Init	0.000338
+COO SpMV	2.220081
+CSR SpMV	0.802026
+COO SpMV Serial	1.460233
+CSR SpMV Serial	1.582544
+Store		0.024918
+check: MATCH
+threads=2 run=4
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r4.mtx ... file saved
+Module		Time
+Load		0.723183
+Convert		0.066026
+Lock Init	0.000336
+COO SpMV	5.522158
+CSR SpMV	0.801813
+COO SpMV Serial	1.454784
+CSR SpMV Serial	1.581262
+Store		0.023979
+check: MATCH
+threads=2 run=5
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r5.mtx ... file saved
+Module		Time
+Load		0.722027
+Convert		0.065522
+Lock Init	0.000341
+COO SpMV	4.622464
+CSR SpMV	0.798601
+COO SpMV Serial	1.461499
+CSR SpMV Serial	1.577044
+Store		0.023800
+check: MATCH
+threads=2 run=6
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r6.mtx ... file saved
+Module		Time
+Load		0.722209
+Convert		0.065270
+Lock Init	0.000343
+COO SpMV	6.509205
+CSR SpMV	0.797621
+COO SpMV Serial	1.448081
+CSR SpMV Serial	1.577305
+Store		0.024966
+check: MATCH
+threads=2 run=7
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r7.mtx ... file saved
+Module		Time
+Load		0.723303
+Convert		0.065676
+Lock Init	0.000346
+COO SpMV	5.275317
+CSR SpMV	0.802104
+COO SpMV Serial	1.460813
+CSR SpMV Serial	1.576711
+Store		0.024088
+check: MATCH
+threads=2 run=8
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r8.mtx ... file saved
+Module		Time
+Load		0.732392
+Convert		0.066989
+Lock Init	0.000341
+COO SpMV	5.469564
+CSR SpMV	0.799683
+COO SpMV Serial	1.461236
+CSR SpMV Serial	1.589478
+Store		0.023332
+check: MATCH
+threads=2 run=9
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r9.mtx ... file saved
+Module		Time
+Load		0.724329
+Convert		0.067210
+Lock Init	0.000346
+COO SpMV	5.949123
+CSR SpMV	0.798750
+COO SpMV Serial	1.458029
+CSR SpMV Serial	1.576607
+Store		0.023753
+check: MATCH
+threads=2 run=10
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r10.mtx ... file saved
+Module		Time
+Load		0.723421
+Convert		0.066868
+Lock Init	0.000344
+COO SpMV	6.548003
+CSR SpMV	0.795379
+COO SpMV Serial	1.461979
+CSR SpMV Serial	1.577847
+Store		0.024175
+check: MATCH
+threads=2 run=11
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r11.mtx ... file saved
+Module		Time
+Load		0.724108
+Convert		0.065670
+Lock Init	0.000336
+COO SpMV	5.431667
+CSR SpMV	0.798918
+COO SpMV Serial	1.471004
+CSR SpMV Serial	1.577396
+Store		0.023816
+check: MATCH
+threads=2 run=12
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r12.mtx ... file saved
+Module		Time
+Load		0.723946
+Convert		0.065388
+Lock Init	0.000344
+COO SpMV	5.956427
+CSR SpMV	0.798421
+COO SpMV Serial	1.446841
+CSR SpMV Serial	1.576848
+Store		0.023866
+check: MATCH
+threads=2 run=13
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r13.mtx ... file saved
+Module		Time
+Load		0.724738
+Convert		0.064816
+Lock Init	0.000338
+COO SpMV	6.533715
+CSR SpMV	0.800403
+COO SpMV Serial	1.453765
+CSR SpMV Serial	1.580827
+Store		0.023697
+check: MATCH
+threads=2 run=14
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r14.mtx ... file saved
+Module		Time
+Load		0.721293
+Convert		0.065590
+Lock Init	0.000340
+COO SpMV	5.797674
+CSR SpMV	0.798360
+COO SpMV Serial	1.453677
+CSR SpMV Serial	1.578294
+Store		0.025650
+check: MATCH
+threads=2 run=15
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r15.mtx ... file saved
+Module		Time
+Load		0.726767
+Convert		0.066394
+Lock Init	0.000343
+COO SpMV	5.975740
+CSR SpMV	0.798106
+COO SpMV Serial	1.459820
+CSR SpMV Serial	1.590938
+Store		0.024425
+check: MATCH
+threads=2 run=16
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r16.mtx ... file saved
+Module		Time
+Load		0.726334
+Convert		0.067222
+Lock Init	0.000347
+COO SpMV	5.905159
+CSR SpMV	0.801643
+COO SpMV Serial	1.453568
+CSR SpMV Serial	1.577214
+Store		0.023900
+check: MATCH
+threads=2 run=17
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r17.mtx ... file saved
+Module		Time
+Load		0.720968
+Convert		0.065796
+Lock Init	0.000350
+COO SpMV	6.422396
+CSR SpMV	0.801040
+COO SpMV Serial	1.458203
+CSR SpMV Serial	1.580562
+Store		0.024482
+check: MATCH
+threads=2 run=18
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r18.mtx ... file saved
+Module		Time
+Load		0.726824
+Convert		0.065850
+Lock Init	0.000336
+COO SpMV	6.893723
+CSR SpMV	0.799535
+COO SpMV Serial	1.461117
+CSR SpMV Serial	1.578988
+Store		0.024180
+check: MATCH
+threads=2 run=19
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r19.mtx ... file saved
+Module		Time
+Load		0.742400
+Convert		0.066094
+Lock Init	0.000344
+COO SpMV	5.946377
+CSR SpMV	0.799867
+COO SpMV Serial	1.458117
+CSR SpMV Serial	1.592707
+Store		0.024858
+check: MATCH
+threads=2 run=20
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t2_r20.mtx ... file saved
+Module		Time
+Load		0.728640
+Convert		0.042006
+Lock Init	0.000346
+COO SpMV	5.867173
+CSR SpMV	0.796361
+COO SpMV Serial	1.458252
+CSR SpMV Serial	1.579203
+Store		0.024196
+check: MATCH
+threads=4 run=1
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r1.mtx ... file saved
+Module		Time
+Load		0.733974
+Convert		0.029521
+Lock Init	0.000235
+COO SpMV	2.681197
+CSR SpMV	0.405648
+COO SpMV Serial	1.459378
+CSR SpMV Serial	1.587337
+Store		0.025307
+check: MATCH
+threads=4 run=2
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r2.mtx ... file saved
+Module		Time
+Load		0.778377
+Convert		0.027880
+Lock Init	0.000243
+COO SpMV	2.706566
+CSR SpMV	0.401766
+COO SpMV Serial	1.458849
+CSR SpMV Serial	1.575859
+Store		0.023008
+check: MATCH
+threads=4 run=3
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r3.mtx ... file saved
+Module		Time
+Load		0.726082
+Convert		0.031410
+Lock Init	0.000233
+COO SpMV	2.989714
+CSR SpMV	0.399900
+COO SpMV Serial	1.462348
+CSR SpMV Serial	1.585248
+Store		0.024404
+check: MATCH
+threads=4 run=4
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r4.mtx ... file saved
+Module		Time
+Load		0.725483
+Convert		0.024882
+Lock Init	0.000234
+COO SpMV	2.740180
+CSR SpMV	0.405968
+COO SpMV Serial	1.463084
+CSR SpMV Serial	1.582970
+Store		0.024419
+check: MATCH
+threads=4 run=5
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r5.mtx ... file saved
+Module		Time
+Load		0.726068
+Convert		0.024486
+Lock Init	0.000233
+COO SpMV	3.221164
+CSR SpMV	0.411388
+COO SpMV Serial	1.468412
+CSR SpMV Serial	1.581214
+Store		0.024537
+check: MATCH
+threads=4 run=6
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r6.mtx ... file saved
+Module		Time
+Load		0.727392
+Convert		0.025493
+Lock Init	0.000234
+COO SpMV	3.329680
+CSR SpMV	0.405244
+COO SpMV Serial	1.463508
+CSR SpMV Serial	1.580309
+Store		0.023630
+check: MATCH
+threads=4 run=7
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r7.mtx ... file saved
+Module		Time
+Load		0.726941
+Convert		0.031879
+Lock Init	0.000240
+COO SpMV	2.491637
+CSR SpMV	0.400996
+COO SpMV Serial	1.466723
+CSR SpMV Serial	1.595293
+Store		0.023913
+check: MATCH
+threads=4 run=8
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r8.mtx ... file saved
+Module		Time
+Load		0.749447
+Convert		0.024291
+Lock Init	0.000233
+COO SpMV	2.259884
+CSR SpMV	0.405514
+COO SpMV Serial	1.458456
+CSR SpMV Serial	1.576764
+Store		0.024873
+check: MATCH
+threads=4 run=9
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r9.mtx ... file saved
+Module		Time
+Load		0.726642
+Convert		0.030989
+Lock Init	0.000229
+COO SpMV	3.435640
+CSR SpMV	0.400301
+COO SpMV Serial	1.468271
+CSR SpMV Serial	1.577917
+Store		0.023883
+check: MATCH
+threads=4 run=10
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r10.mtx ... file saved
+Module		Time
+Load		0.725023
+Convert		0.025723
+Lock Init	0.000236
+COO SpMV	3.085272
+CSR SpMV	0.402766
+COO SpMV Serial	1.457152
+CSR SpMV Serial	1.579589
+Store		0.024742
+check: MATCH
+threads=4 run=11
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r11.mtx ... file saved
+Module		Time
+Load		0.727125
+Convert		0.025121
+Lock Init	0.000243
+COO SpMV	2.943024
+CSR SpMV	0.407485
+COO SpMV Serial	1.461972
+CSR SpMV Serial	1.579441
+Store		0.024524
+check: MATCH
+threads=4 run=12
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r12.mtx ... file saved
+Module		Time
+Load		0.729928
+Convert		0.026467
+Lock Init	0.000235
+COO SpMV	2.719263
+CSR SpMV	0.404640
+COO SpMV Serial	1.461649
+CSR SpMV Serial	1.579581
+Store		0.022887
+check: MATCH
+threads=4 run=13
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r13.mtx ... file saved
+Module		Time
+Load		0.743515
+Convert		0.031694
+Lock Init	0.000238
+COO SpMV	2.245978
+CSR SpMV	0.402110
+COO SpMV Serial	1.467009
+CSR SpMV Serial	1.586816
+Store		0.025125
+check: MATCH
+threads=4 run=14
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r14.mtx ... file saved
+Module		Time
+Load		0.742613
+Convert		0.030888
+Lock Init	0.000235
+COO SpMV	2.239868
+CSR SpMV	0.399713
+COO SpMV Serial	1.468641
+CSR SpMV Serial	1.596628
+Store		0.023879
+check: MATCH
+threads=4 run=15
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r15.mtx ... file saved
+Module		Time
+Load		0.727903
+Convert		0.029284
+Lock Init	0.000240
+COO SpMV	2.455692
+CSR SpMV	0.400403
+COO SpMV Serial	1.462937
+CSR SpMV Serial	1.593272
+Store		0.024336
+check: MATCH
+threads=4 run=16
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r16.mtx ... file saved
+Module		Time
+Load		0.725343
+Convert		0.024704
+Lock Init	0.000234
+COO SpMV	3.074159
+CSR SpMV	0.402714
+COO SpMV Serial	1.456390
+CSR SpMV Serial	1.576688
+Store		0.024353
+check: MATCH
+threads=4 run=17
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r17.mtx ... file saved
+Module		Time
+Load		0.754237
+Convert		0.026002
+Lock Init	0.000236
+COO SpMV	2.284664
+CSR SpMV	0.408058
+COO SpMV Serial	1.472547
+CSR SpMV Serial	1.594021
+Store		0.024410
+check: MATCH
+threads=4 run=18
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r18.mtx ... file saved
+Module		Time
+Load		0.748041
+Convert		0.030664
+Lock Init	0.000230
+COO SpMV	2.723566
+CSR SpMV	0.401482
+COO SpMV Serial	1.459240
+CSR SpMV Serial	1.575185
+Store		0.022369
+check: MATCH
+threads=4 run=19
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r19.mtx ... file saved
+Module		Time
+Load		0.744262
+Convert		0.031321
+Lock Init	0.000229
+COO SpMV	2.647822
+CSR SpMV	0.403383
+COO SpMV Serial	1.466168
+CSR SpMV Serial	1.588301
+Store		0.023028
+check: MATCH
+threads=4 run=20
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t4_r20.mtx ... file saved
+Module		Time
+Load		0.727151
+Convert		0.024090
+Lock Init	0.000233
+COO SpMV	2.241903
+CSR SpMV	0.408465
+COO SpMV Serial	1.458385
+CSR SpMV Serial	1.595026
+Store		0.024078
+check: MATCH
+threads=8 run=1
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r1.mtx ... file saved
+Module		Time
+Load		0.726009
+Convert		0.018329
+Lock Init	0.000244
+COO SpMV	1.900474
+CSR SpMV	0.204305
+COO SpMV Serial	1.456031
+CSR SpMV Serial	1.582279
+Store		0.024518
+check: MATCH
+threads=8 run=2
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r2.mtx ... file saved
+Module		Time
+Load		0.728951
+Convert		0.016138
+Lock Init	0.000244
+COO SpMV	2.039311
+CSR SpMV	0.200679
+COO SpMV Serial	1.463635
+CSR SpMV Serial	1.587619
+Store		0.022887
+check: MATCH
+threads=8 run=3
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r3.mtx ... file saved
+Module		Time
+Load		0.726771
+Convert		0.019406
+Lock Init	0.000244
+COO SpMV	2.157116
+CSR SpMV	0.207040
+COO SpMV Serial	1.466265
+CSR SpMV Serial	1.580725
+Store		0.023994
+check: MATCH
+threads=8 run=4
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r4.mtx ... file saved
+Module		Time
+Load		0.727650
+Convert		0.020169
+Lock Init	0.000247
+COO SpMV	2.003725
+CSR SpMV	0.203856
+COO SpMV Serial	1.458299
+CSR SpMV Serial	1.582077
+Store		0.024047
+check: MATCH
+threads=8 run=5
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r5.mtx ... file saved
+Module		Time
+Load		0.725458
+Convert		0.020252
+Lock Init	0.000235
+COO SpMV	2.330527
+CSR SpMV	0.204961
+COO SpMV Serial	1.461191
+CSR SpMV Serial	1.578637
+Store		0.024203
+check: MATCH
+threads=8 run=6
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r6.mtx ... file saved
+Module		Time
+Load		0.743460
+Convert		0.016830
+Lock Init	0.000245
+COO SpMV	2.192195
+CSR SpMV	0.206476
+COO SpMV Serial	1.466431
+CSR SpMV Serial	1.580960
+Store		0.024038
+check: MATCH
+threads=8 run=7
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r7.mtx ... file saved
+Module		Time
+Load		0.724754
+Convert		0.019434
+Lock Init	0.000239
+COO SpMV	2.188324
+CSR SpMV	0.205351
+COO SpMV Serial	1.458897
+CSR SpMV Serial	1.581956
+Store		0.023832
+check: MATCH
+threads=8 run=8
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r8.mtx ... file saved
+Module		Time
+Load		0.725671
+Convert		0.018447
+Lock Init	0.000246
+COO SpMV	2.257420
+CSR SpMV	0.204021
+COO SpMV Serial	1.460793
+CSR SpMV Serial	1.583849
+Store		0.024726
+check: MATCH
+threads=8 run=9
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r9.mtx ... file saved
+Module		Time
+Load		0.729626
+Convert		0.018481
+Lock Init	0.000244
+COO SpMV	2.075225
+CSR SpMV	0.208937
+COO SpMV Serial	1.465702
+CSR SpMV Serial	1.581208
+Store		0.024067
+check: MATCH
+threads=8 run=10
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r10.mtx ... file saved
+Module		Time
+Load		0.727874
+Convert		0.018649
+Lock Init	0.000245
+COO SpMV	2.510001
+CSR SpMV	0.206126
+COO SpMV Serial	1.459913
+CSR SpMV Serial	1.580212
+Store		0.024113
+check: MATCH
+threads=8 run=11
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r11.mtx ... file saved
+Module		Time
+Load		0.745205
+Convert		0.020665
+Lock Init	0.000234
+COO SpMV	2.490156
+CSR SpMV	0.205390
+COO SpMV Serial	1.458193
+CSR SpMV Serial	1.580147
+Store		0.023260
+check: MATCH
+threads=8 run=12
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r12.mtx ... file saved
+Module		Time
+Load		0.725819
+Convert		0.019019
+Lock Init	0.000244
+COO SpMV	2.412519
+CSR SpMV	0.204314
+COO SpMV Serial	1.458267
+CSR SpMV Serial	1.579766
+Store		0.023064
+check: MATCH
+threads=8 run=13
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r13.mtx ... file saved
+Module		Time
+Load		0.726472
+Convert		0.020006
+Lock Init	0.000240
+COO SpMV	1.832467
+CSR SpMV	0.203773
+COO SpMV Serial	1.466612
+CSR SpMV Serial	1.594091
+Store		0.023939
+check: MATCH
+threads=8 run=14
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r14.mtx ... file saved
+Module		Time
+Load		0.741805
+Convert		0.019728
+Lock Init	0.000235
+COO SpMV	1.880173
+CSR SpMV	0.203803
+COO SpMV Serial	1.462400
+CSR SpMV Serial	1.581832
+Store		0.024184
+check: MATCH
+threads=8 run=15
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r15.mtx ... file saved
+Module		Time
+Load		0.731121
+Convert		0.019977
+Lock Init	0.000234
+COO SpMV	2.152287
+CSR SpMV	0.205903
+COO SpMV Serial	1.461700
+CSR SpMV Serial	1.589460
+Store		0.024552
+check: MATCH
+threads=8 run=16
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r16.mtx ... file saved
+Module		Time
+Load		0.726744
+Convert		0.022323
+Lock Init	0.000243
+COO SpMV	2.162590
+CSR SpMV	0.204910
+COO SpMV Serial	1.454605
+CSR SpMV Serial	1.583445
+Store		0.023994
+check: MATCH
+threads=8 run=17
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r17.mtx ... file saved
+Module		Time
+Load		0.730973
+Convert		0.020145
+Lock Init	0.000240
+COO SpMV	2.240683
+CSR SpMV	0.207934
+COO SpMV Serial	1.463255
+CSR SpMV Serial	1.577233
+Store		0.024027
+check: MATCH
+threads=8 run=18
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r18.mtx ... file saved
+Module		Time
+Load		0.732771
+Convert		0.016022
+Lock Init	0.000243
+COO SpMV	1.946952
+CSR SpMV	0.204824
+COO SpMV Serial	1.458362
+CSR SpMV Serial	1.581128
+Store		0.025663
+check: MATCH
+threads=8 run=19
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r19.mtx ... file saved
+Module		Time
+Load		0.727195
+Convert		0.019650
+Lock Init	0.000240
+COO SpMV	2.683395
+CSR SpMV	0.203641
+COO SpMV Serial	1.461900
+CSR SpMV Serial	1.580945
+Store		0.024033
+check: MATCH
+threads=8 run=20
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t8_r20.mtx ... file saved
+Module		Time
+Load		0.728807
+Convert		0.018629
+Lock Init	0.000247
+COO SpMV	2.311980
+CSR SpMV	0.206374
+COO SpMV Serial	1.460812
+CSR SpMV Serial	1.586187
+Store		0.023186
+check: MATCH
+threads=16 run=1
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r1.mtx ... file saved
+Module		Time
+Load		0.729125
+Convert		0.016272
+Lock Init	0.000254
+COO SpMV	0.769375
+CSR SpMV	0.102377
+COO SpMV Serial	1.451825
+CSR SpMV Serial	1.600422
+Store		0.024997
+check: MATCH
+threads=16 run=2
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r2.mtx ... file saved
+Module		Time
+Load		0.734885
+Convert		0.015441
+Lock Init	0.000284
+COO SpMV	1.000669
+CSR SpMV	0.101992
+COO SpMV Serial	1.457589
+CSR SpMV Serial	1.577279
+Store		0.023556
+check: MATCH
+threads=16 run=3
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r3.mtx ... file saved
+Module		Time
+Load		0.729206
+Convert		0.015856
+Lock Init	0.000277
+COO SpMV	1.016295
+CSR SpMV	0.105843
+COO SpMV Serial	1.458064
+CSR SpMV Serial	1.577870
+Store		0.022805
+check: MATCH
+threads=16 run=4
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r4.mtx ... file saved
+Module		Time
+Load		0.728622
+Convert		0.017672
+Lock Init	0.000250
+COO SpMV	0.760875
+CSR SpMV	0.102722
+COO SpMV Serial	1.453314
+CSR SpMV Serial	1.594920
+Store		0.024134
+check: MATCH
+threads=16 run=5
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r5.mtx ... file saved
+Module		Time
+Load		0.733880
+Convert		0.016861
+Lock Init	0.000263
+COO SpMV	0.864729
+CSR SpMV	0.103342
+COO SpMV Serial	1.450072
+CSR SpMV Serial	1.598886
+Store		0.023419
+check: MATCH
+threads=16 run=6
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r6.mtx ... file saved
+Module		Time
+Load		0.736739
+Convert		0.015663
+Lock Init	0.000278
+COO SpMV	0.938021
+CSR SpMV	0.106301
+COO SpMV Serial	1.447618
+CSR SpMV Serial	1.578900
+Store		0.023885
+check: MATCH
+threads=16 run=7
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r7.mtx ... file saved
+Module		Time
+Load		0.733354
+Convert		0.017613
+Lock Init	0.000249
+COO SpMV	0.780715
+CSR SpMV	0.102340
+COO SpMV Serial	1.449028
+CSR SpMV Serial	1.597678
+Store		0.024317
+check: MATCH
+threads=16 run=8
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r8.mtx ... file saved
+Module		Time
+Load		0.731991
+Convert		0.016974
+Lock Init	0.000271
+COO SpMV	1.020614
+CSR SpMV	0.102512
+COO SpMV Serial	1.462226
+CSR SpMV Serial	1.577133
+Store		0.023865
+check: MATCH
+threads=16 run=9
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r9.mtx ... file saved
+Module		Time
+Load		0.730569
+Convert		0.018812
+Lock Init	0.000262
+COO SpMV	0.923083
+CSR SpMV	0.109726
+COO SpMV Serial	1.449809
+CSR SpMV Serial	1.579309
+Store		0.023693
+check: MATCH
+threads=16 run=10
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r10.mtx ... file saved
+Module		Time
+Load		0.732103
+Convert		0.017036
+Lock Init	0.000262
+COO SpMV	0.755598
+CSR SpMV	0.102392
+COO SpMV Serial	1.454899
+CSR SpMV Serial	1.593449
+Store		0.024491
+check: MATCH
+threads=16 run=11
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r11.mtx ... file saved
+Module		Time
+Load		0.734614
+Convert		0.016549
+Lock Init	0.000256
+COO SpMV	0.857071
+CSR SpMV	0.102264
+COO SpMV Serial	1.454114
+CSR SpMV Serial	1.603453
+Store		0.024757
+check: MATCH
+threads=16 run=12
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r12.mtx ... file saved
+Module		Time
+Load		0.733568
+Convert		0.016382
+Lock Init	0.000254
+COO SpMV	0.706107
+CSR SpMV	0.103822
+COO SpMV Serial	1.448354
+CSR SpMV Serial	1.593529
+Store		0.024501
+check: MATCH
+threads=16 run=13
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r13.mtx ... file saved
+Module		Time
+Load		0.734597
+Convert		0.017764
+Lock Init	0.000252
+COO SpMV	0.828695
+CSR SpMV	0.103069
+COO SpMV Serial	1.455400
+CSR SpMV Serial	1.599355
+Store		0.024419
+check: MATCH
+threads=16 run=14
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r14.mtx ... file saved
+Module		Time
+Load		0.731041
+Convert		0.015758
+Lock Init	0.000255
+COO SpMV	0.789613
+CSR SpMV	0.104068
+COO SpMV Serial	1.446854
+CSR SpMV Serial	1.599317
+Store		0.024261
+check: MATCH
+threads=16 run=15
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r15.mtx ... file saved
+Module		Time
+Load		0.735759
+Convert		0.018074
+Lock Init	0.000255
+COO SpMV	0.782530
+CSR SpMV	0.103869
+COO SpMV Serial	1.460883
+CSR SpMV Serial	1.599145
+Store		0.024277
+check: MATCH
+threads=16 run=16
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r16.mtx ... file saved
+Module		Time
+Load		0.735644
+Convert		0.016314
+Lock Init	0.000293
+COO SpMV	1.012100
+CSR SpMV	0.103769
+COO SpMV Serial	1.461457
+CSR SpMV Serial	1.578797
+Store		0.023386
+check: MATCH
+threads=16 run=17
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r17.mtx ... file saved
+Module		Time
+Load		0.732973
+Convert		0.017200
+Lock Init	0.000254
+COO SpMV	0.688030
+CSR SpMV	0.101971
+COO SpMV Serial	1.458572
+CSR SpMV Serial	1.599627
+Store		0.025918
+check: MATCH
+threads=16 run=18
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r18.mtx ... file saved
+Module		Time
+Load		0.750731
+Convert		0.017830
+Lock Init	0.000242
+COO SpMV	0.771192
+CSR SpMV	0.102360
+COO SpMV Serial	1.452404
+CSR SpMV Serial	1.597462
+Store		0.025306
+check: MATCH
+threads=16 run=19
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r19.mtx ... file saved
+Module		Time
+Load		0.736664
+Convert		0.016578
+Lock Init	0.000250
+COO SpMV	0.886671
+CSR SpMV	0.110391
+COO SpMV Serial	1.454230
+CSR SpMV Serial	1.579281
+Store		0.023636
+check: MATCH
+threads=16 run=20
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t16_r20.mtx ... file saved
+Module		Time
+Load		0.737148
+Convert		0.017028
+Lock Init	0.000259
+COO SpMV	0.908542
+CSR SpMV	0.111142
+COO SpMV Serial	1.451864
+CSR SpMV Serial	1.575616
+Store		0.023700
+check: MATCH
+threads=32 run=1
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r1.mtx ... file saved
+Module		Time
+Load		0.735965
+Convert		0.020333
+Lock Init	0.000245
+COO SpMV	0.344751
+CSR SpMV	0.056958
+COO SpMV Serial	1.447785
+CSR SpMV Serial	1.596038
+Store		0.025289
+check: MATCH
+threads=32 run=2
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r2.mtx ... file saved
+Module		Time
+Load		0.737276
+Convert		0.020732
+Lock Init	0.000244
+COO SpMV	0.463601
+CSR SpMV	0.054467
+COO SpMV Serial	1.452506
+CSR SpMV Serial	1.594796
+Store		0.023799
+check: MATCH
+threads=32 run=3
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r3.mtx ... file saved
+Module		Time
+Load		0.734004
+Convert		0.020998
+Lock Init	0.000244
+COO SpMV	0.332916
+CSR SpMV	0.054906
+COO SpMV Serial	1.451041
+CSR SpMV Serial	1.598428
+Store		0.024532
+check: MATCH
+threads=32 run=4
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r4.mtx ... file saved
+Module		Time
+Load		0.736215
+Convert		0.021003
+Lock Init	0.000240
+COO SpMV	0.387631
+CSR SpMV	0.055773
+COO SpMV Serial	1.451242
+CSR SpMV Serial	1.597451
+Store		0.024670
+check: MATCH
+threads=32 run=5
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r5.mtx ... file saved
+Module		Time
+Load		0.734240
+Convert		0.019259
+Lock Init	0.000249
+COO SpMV	0.468768
+CSR SpMV	0.053653
+COO SpMV Serial	1.446597
+CSR SpMV Serial	1.589326
+Store		0.023618
+check: MATCH
+threads=32 run=6
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r6.mtx ... file saved
+Module		Time
+Load		0.737088
+Convert		0.020319
+Lock Init	0.000248
+COO SpMV	0.367974
+CSR SpMV	0.054840
+COO SpMV Serial	1.453172
+CSR SpMV Serial	1.595733
+Store		0.024365
+check: MATCH
+threads=32 run=7
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r7.mtx ... file saved
+Module		Time
+Load		0.758219
+Convert		0.020228
+Lock Init	0.000243
+COO SpMV	0.419242
+CSR SpMV	0.054572
+COO SpMV Serial	1.454695
+CSR SpMV Serial	1.597145
+Store		0.024447
+check: MATCH
+threads=32 run=8
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r8.mtx ... file saved
+Module		Time
+Load		0.739960
+Convert		0.020316
+Lock Init	0.000243
+COO SpMV	0.421697
+CSR SpMV	0.053865
+COO SpMV Serial	1.449597
+CSR SpMV Serial	1.595725
+Store		0.024394
+check: MATCH
+threads=32 run=9
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r9.mtx ... file saved
+Module		Time
+Load		0.753220
+Convert		0.020340
+Lock Init	0.000245
+COO SpMV	0.408192
+CSR SpMV	0.055280
+COO SpMV Serial	1.451517
+CSR SpMV Serial	1.593226
+Store		0.025443
+check: MATCH
+threads=32 run=10
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r10.mtx ... file saved
+Module		Time
+Load		0.735071
+Convert		0.021243
+Lock Init	0.000237
+COO SpMV	0.417659
+CSR SpMV	0.055743
+COO SpMV Serial	1.452776
+CSR SpMV Serial	1.595241
+Store		0.024731
+check: MATCH
+threads=32 run=11
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r11.mtx ... file saved
+Module		Time
+Load		0.734360
+Convert		0.024022
+Lock Init	0.000241
+COO SpMV	0.346961
+CSR SpMV	0.055752
+COO SpMV Serial	1.447078
+CSR SpMV Serial	1.593478
+Store		0.023622
+check: MATCH
+threads=32 run=12
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r12.mtx ... file saved
+Module		Time
+Load		0.735013
+Convert		0.020874
+Lock Init	0.000247
+COO SpMV	0.438610
+CSR SpMV	0.055502
+COO SpMV Serial	1.453082
+CSR SpMV Serial	1.597429
+Store		0.023778
+check: MATCH
+threads=32 run=13
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r13.mtx ... file saved
+Module		Time
+Load		0.731778
+Convert		0.021928
+Lock Init	0.000252
+COO SpMV	0.349969
+CSR SpMV	0.055226
+COO SpMV Serial	1.453199
+CSR SpMV Serial	1.594003
+Store		0.024655
+check: MATCH
+threads=32 run=14
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r14.mtx ... file saved
+Module		Time
+Load		0.736347
+Convert		0.021609
+Lock Init	0.000251
+COO SpMV	0.338020
+CSR SpMV	0.055665
+COO SpMV Serial	1.451214
+CSR SpMV Serial	1.595558
+Store		0.024182
+check: MATCH
+threads=32 run=15
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r15.mtx ... file saved
+Module		Time
+Load		0.734750
+Convert		0.020454
+Lock Init	0.000246
+COO SpMV	0.396231
+CSR SpMV	0.055059
+COO SpMV Serial	1.446212
+CSR SpMV Serial	1.595601
+Store		0.024654
+check: MATCH
+threads=32 run=16
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r16.mtx ... file saved
+Module		Time
+Load		0.734389
+Convert		0.021608
+Lock Init	0.000247
+COO SpMV	0.346698
+CSR SpMV	0.054404
+COO SpMV Serial	1.447815
+CSR SpMV Serial	1.596897
+Store		0.023709
+check: MATCH
+threads=32 run=17
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r17.mtx ... file saved
+Module		Time
+Load		0.734095
+Convert		0.021427
+Lock Init	0.000241
+COO SpMV	0.360182
+CSR SpMV	0.053814
+COO SpMV Serial	1.456172
+CSR SpMV Serial	1.598308
+Store		0.024319
+check: MATCH
+threads=32 run=18
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r18.mtx ... file saved
+Module		Time
+Load		0.738991
+Convert		0.021977
+Lock Init	0.000243
+COO SpMV	0.422608
+CSR SpMV	0.055881
+COO SpMV Serial	1.446158
+CSR SpMV Serial	1.596677
+Store		0.023708
+check: MATCH
+threads=32 run=19
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r19.mtx ... file saved
+Module		Time
+Load		0.732062
+Convert		0.022088
+Lock Init	0.000241
+COO SpMV	0.358737
+CSR SpMV	0.054829
+COO SpMV Serial	1.450128
+CSR SpMV Serial	1.597897
+Store		0.024822
+check: MATCH
+threads=32 run=20
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t32_r20.mtx ... file saved
+Module		Time
+Load		0.732986
+Convert		0.020707
+Lock Init	0.000247
+COO SpMV	0.367428
+CSR SpMV	0.056672
+COO SpMV Serial	1.459092
+CSR SpMV Serial	1.599321
+Store		0.024352
+check: MATCH
+threads=64 run=1
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r1.mtx ... file saved
+Module		Time
+Load		0.735151
+Convert		0.032387
+Lock Init	0.000234
+COO SpMV	0.213628
+CSR SpMV	0.030126
+COO SpMV Serial	1.453597
+CSR SpMV Serial	1.592276
+Store		0.023582
+check: MATCH
+threads=64 run=2
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r2.mtx ... file saved
+Module		Time
+Load		0.734974
+Convert		0.031320
+Lock Init	0.000237
+COO SpMV	0.212721
+CSR SpMV	0.031174
+COO SpMV Serial	1.453138
+CSR SpMV Serial	1.597372
+Store		0.023581
+check: MATCH
+threads=64 run=3
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r3.mtx ... file saved
+Module		Time
+Load		0.734206
+Convert		0.029431
+Lock Init	0.000229
+COO SpMV	0.218624
+CSR SpMV	0.030151
+COO SpMV Serial	1.450743
+CSR SpMV Serial	1.596336
+Store		0.024538
+check: MATCH
+threads=64 run=4
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r4.mtx ... file saved
+Module		Time
+Load		0.733344
+Convert		0.033397
+Lock Init	0.000232
+COO SpMV	0.213182
+CSR SpMV	0.032030
+COO SpMV Serial	1.455239
+CSR SpMV Serial	1.592782
+Store		0.024658
+check: MATCH
+threads=64 run=5
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r5.mtx ... file saved
+Module		Time
+Load		0.739958
+Convert		0.031883
+Lock Init	0.000230
+COO SpMV	0.203942
+CSR SpMV	0.030745
+COO SpMV Serial	1.448992
+CSR SpMV Serial	1.595001
+Store		0.023792
+check: MATCH
+threads=64 run=6
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r6.mtx ... file saved
+Module		Time
+Load		0.739702
+Convert		0.030449
+Lock Init	0.000228
+COO SpMV	0.208309
+CSR SpMV	0.031703
+COO SpMV Serial	1.454745
+CSR SpMV Serial	1.590763
+Store		0.023311
+check: MATCH
+threads=64 run=7
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r7.mtx ... file saved
+Module		Time
+Load		0.731236
+Convert		0.030991
+Lock Init	0.000228
+COO SpMV	0.215666
+CSR SpMV	0.031526
+COO SpMV Serial	1.452152
+CSR SpMV Serial	1.597895
+Store		0.024884
+check: MATCH
+threads=64 run=8
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r8.mtx ... file saved
+Module		Time
+Load		0.754733
+Convert		0.029875
+Lock Init	0.000231
+COO SpMV	0.218016
+CSR SpMV	0.030845
+COO SpMV Serial	1.455504
+CSR SpMV Serial	1.597213
+Store		0.025377
+check: MATCH
+threads=64 run=9
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r9.mtx ... file saved
+Module		Time
+Load		0.732995
+Convert		0.033155
+Lock Init	0.000237
+COO SpMV	0.214141
+CSR SpMV	0.031390
+COO SpMV Serial	1.455989
+CSR SpMV Serial	1.598343
+Store		0.024980
+check: MATCH
+threads=64 run=10
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r10.mtx ... file saved
+Module		Time
+Load		0.737892
+Convert		0.032456
+Lock Init	0.000227
+COO SpMV	0.196308
+CSR SpMV	0.032612
+COO SpMV Serial	1.452572
+CSR SpMV Serial	1.593959
+Store		0.024770
+check: MATCH
+threads=64 run=11
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r11.mtx ... file saved
+Module		Time
+Load		0.735683
+Convert		0.030822
+Lock Init	0.000230
+COO SpMV	0.215555
+CSR SpMV	0.030110
+COO SpMV Serial	1.448470
+CSR SpMV Serial	1.594291
+Store		0.024624
+check: MATCH
+threads=64 run=12
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r12.mtx ... file saved
+Module		Time
+Load		0.737454
+Convert		0.030034
+Lock Init	0.000234
+COO SpMV	0.217484
+CSR SpMV	0.032139
+COO SpMV Serial	1.452416
+CSR SpMV Serial	1.593961
+Store		0.023561
+check: MATCH
+threads=64 run=13
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r13.mtx ... file saved
+Module		Time
+Load		0.741323
+Convert		0.030719
+Lock Init	0.000230
+COO SpMV	0.202868
+CSR SpMV	0.030272
+COO SpMV Serial	1.455303
+CSR SpMV Serial	1.595719
+Store		0.024670
+check: MATCH
+threads=64 run=14
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r14.mtx ... file saved
+Module		Time
+Load		0.766041
+Convert		0.030118
+Lock Init	0.000236
+COO SpMV	0.212864
+CSR SpMV	0.031384
+COO SpMV Serial	1.452752
+CSR SpMV Serial	1.600562
+Store		0.024531
+check: MATCH
+threads=64 run=15
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r15.mtx ... file saved
+Module		Time
+Load		0.738357
+Convert		0.029610
+Lock Init	0.000227
+COO SpMV	0.211292
+CSR SpMV	0.030544
+COO SpMV Serial	1.455239
+CSR SpMV Serial	1.595206
+Store		0.023516
+check: MATCH
+threads=64 run=16
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r16.mtx ... file saved
+Module		Time
+Load		0.737429
+Convert		0.030187
+Lock Init	0.000241
+COO SpMV	0.211545
+CSR SpMV	0.032364
+COO SpMV Serial	1.460002
+CSR SpMV Serial	1.598318
+Store		0.023703
+check: MATCH
+threads=64 run=17
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r17.mtx ... file saved
+Module		Time
+Load		0.777237
+Convert		0.033935
+Lock Init	0.000233
+COO SpMV	0.221733
+CSR SpMV	0.032988
+COO SpMV Serial	1.447291
+CSR SpMV Serial	1.592529
+Store		0.023775
+check: MATCH
+threads=64 run=18
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r18.mtx ... file saved
+Module		Time
+Load		0.736999
+Convert		0.031868
+Lock Init	0.000229
+COO SpMV	0.230427
+CSR SpMV	0.032031
+COO SpMV Serial	1.451223
+CSR SpMV Serial	1.593708
+Store		0.023527
+check: MATCH
+threads=64 run=19
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r19.mtx ... file saved
+Module		Time
+Load		0.737544
+Convert		0.030339
+Lock Init	0.000239
+COO SpMV	0.212365
+CSR SpMV	0.032243
+COO SpMV Serial	1.448857
+CSR SpMV Serial	1.594224
+Store		0.023781
+check: MATCH
+threads=64 run=20
+-----------------------------------------------------
+Matrix name:     cant/cant.mtx
+Matrix size:     62451 x 62451 => 2034917
+-----------------------------------------------------
+Is matrix:       1
+Is sparse:       1
+-----------------------------------------------------
+Is complex:      0
+Is real:         1
+Is integer:      0
+Is pattern only: 0
+-----------------------------------------------------
+Is general:      0
+Is symmetric:    1
+Is skewed:       0
+Is hermitian:    0
+-----------------------------------------------------
+Matrix file name: cant/cant.mtx ... file loaded.
+Expanding symmetric matrix ... done
+  Total # of non-zeros is 4007383
+Converting COO to CSR...done
+Vector file name: cant/b.mtx ... file loaded
+Calculating COO SpMV ... done
+Calculating CSR SpMV ... done
+Calculating COO SpMV serial ... done
+Calculating CSR SpMV ... done
+Result file name: output/myans_t64_r20.mtx ... file saved
+Module		Time
+Load		0.737651
+Convert		0.033928
+Lock Init	0.000236
+COO SpMV	0.211751
+CSR SpMV	0.031122
+COO SpMV Serial	1.454129
+CSR SpMV Serial	1.593337
+Store		0.024853
+check: MATCH
