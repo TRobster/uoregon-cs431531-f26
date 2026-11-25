@@ -19,6 +19,12 @@
 #define SPMV_CSR_SER     6
 #define STORE_TIME       7
 
+/*
+Author: Trevor Robbins
+Class: CS431
+Professor: Choi
+Date: 11/18/2026
+*/
 
 int main(int argc, char** argv)
 {
