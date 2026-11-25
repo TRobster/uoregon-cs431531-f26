@@ -82,6 +82,8 @@ BLUE = "#2a78d6"     # COO
 ORANGE = "#eb6834"   # CSR
 
 plain = FuncFormatter(lambda v, _: f"{v:g}")
+# on the log axis, only label minor ticks starting with 2 or 5 so they don't overlap
+sparse = FuncFormatter(lambda v, _: f"{v:g}" if f"{v:.0e}"[0] in "25" else "")
 
 def style(ax, ylabel, title):
     ax.set_facecolor(SURFACE)
@@ -90,7 +92,7 @@ def style(ax, ylabel, title):
     ax.set_xticks(counts)
     ax.set_xticklabels(counts)
     ax.yaxis.set_major_formatter(plain)
-    ax.yaxis.set_minor_formatter(plain)
+    ax.yaxis.set_minor_formatter(sparse)
     ax.set_xlabel("threads", color=INK2)
     ax.set_ylabel(ylabel, color=INK2)
     ax.set_title(title, color=INK, loc="left", fontsize=11)
